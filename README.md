@@ -10,6 +10,7 @@ This repository contains the implementation developed as part of a research proj
 
 ```text
 .
+├── scripts         # Literature screening
 └── README.md
 ```
 
