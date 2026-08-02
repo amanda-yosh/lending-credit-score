@@ -97,14 +97,8 @@ def classificar_completo(title, abstract):
     if re.search(r'defi|decentralized finance', t) and re.search(r'\blend\b|\bloan\b|\bborrow\b|credit', t):
         return 'INCLUIR', 'CI-1', 'DeFi + lending/loan/credit no título'
 
-    if re.search(r'peer.to.peer lend|p2p lend|p2p loan', t):
-        return 'INCLUIR', 'CI-1', 'P2P lending + blockchain'
-
     if re.search(r'smart contract', t) and re.search(r'\blend\b|\bloan\b|\bborrow\b', t):
         return 'INCLUIR', 'CI-1', 'Smart contract + lending no título'
-
-    if re.search(r'undercollateral|uncollateral', t + ' ' + a):
-        return 'INCLUIR', 'CI-1', 'Undercollateralized lending (relevância alta)'
 
     if re.search(r'defi|decentralized finance', t) and re.search(r'protocol|platform|pool|vault|liquidat', t):
         return 'INCLUIR', 'CI-1', 'Protocolo DeFi com dinâmica de lending'
