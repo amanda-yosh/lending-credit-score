@@ -10,7 +10,9 @@ This repository contains the implementation developed as part of a research proj
 
 ```text
 .
-├── scripts         # Literature screening
+├── scripts             # Literature screening
+├── dune-queries        # Queries applyed on Dune Analytics
+│   └── visualization   # Apply visualization to queries results
 └── README.md
 ```
 
